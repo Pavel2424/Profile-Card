@@ -18,3 +18,11 @@ const handleButtonClick = (e) => {
 buttons.forEach((btn) => {
   btn.addEventListener("click", handleButtonClick);
 });
+
+// Add event listener to "Work Together" button to redirect to mailto on click
+const workTogetherBtn = document.querySelector(".contact-me");
+if (workTogetherBtn) {
+  workTogetherBtn.addEventListener("click", () => {
+    window.location.href = "mailto:pavel.stojoski332@gmail.com";
+  });
+}
